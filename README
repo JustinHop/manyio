@@ -1,0 +1,42 @@
+manyio
+
+I have had ENOUGH of going back and forth between these FREAKING FORMATS!!!!
+
+Converts easily between YaML, JSON, and XML. I'll add more if I feel like it.
+
+(c) Justin Hoppensteadt 2019 <justinrocksmadscience@gmail.com>
+
+Usage:
+
+<justin@thinkpad1:~/src/manyio>
+$ ./manyio.py --help
+manyio Justin Hoppensteadt 2019 <justinrocksmadscience@gmail.com
+Usage: manyio [options] [INPUT] [OUTPUT]
+
+Options:
+    -i --informat=FORMAT     Format of input  [default: auto]
+    -o --outformat=FORMAT    Format of output [default: pretty]
+    -D --debug               Debug output
+    -F --formats             List supported formats
+    -h --help                help
+
+Arguments:
+    INPUT           Input file, - or none for stdin
+    OUTPUT          Output file, or none for stdout
+<justin@thinkpad1:~/src/manyio>
+$ ./manyio.py --formats
+Input formats: ['auto', 'json', 'xml', 'yaml']
+Output formats: ['auto', 'json', 'xml', 'yaml', 'pretty']
+
+
+Requirements:
+
+Written for python3.7. The only non-standard library I use is docopt, which is awesome.
+http://docopt.org/
+
+
+I took two defs off of stack exchange, the rest is mine
+
+
+Write it, cut it, paste it, save it, load it, check it, quick rewrite it
+
