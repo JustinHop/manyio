@@ -34,6 +34,7 @@ Requirements:
 Written for python3.7. The only non-standard library I use is docopt, which is awesome.
 http://docopt.org/
 
+I started using xmltodict as well
 
 I took two defs off of stack exchange, the rest is mine
 
