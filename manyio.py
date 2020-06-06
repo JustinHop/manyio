@@ -147,7 +147,7 @@ def process_output(fmt, data):
         except AttributeError:
             debug('return(ET.tostringlist(data)) didnt work')
         return(xmltodict.unparse(data))
-    if re.match(r'^json', str(fmt), re.I):
+    if re.match(r'^js(on)?', str(fmt), re.I):
         return(json.dumps(data))
     if re.match(r'^pretty', str(fmt), re.I):
         return(pformat(data))
@@ -187,6 +187,7 @@ def format_from_data(data):
 
 def main():
     global conf
+    datadict = {}
     conf = docopt(__doc__)
     debug(["conf", conf])
     if conf['--formats']:
